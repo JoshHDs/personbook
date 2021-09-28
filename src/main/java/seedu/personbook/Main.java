@@ -71,6 +71,7 @@ public class Main {
         try {
             command.setData(personBook);
             CommandResult result = command.execute();
+            System.out.println();
             return result;
         } catch (Exception e) {
             ui.showToUser(e.getMessage());
