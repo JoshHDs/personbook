@@ -56,6 +56,7 @@ public class Main {
             CommandResult result = executeCommand(command);
             personBook.setLastShownList(result.getRelevantPersons());
             ui.showResultToUser(result);
+            System.out.println();
 
         } while (!ExitCommand.isExit(command));
     }
